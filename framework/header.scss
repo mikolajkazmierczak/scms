@@ -1,0 +1,21 @@
+.c-header {
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: $sizeTM;
+  background-color: $colorGrey2;
+}
+  .c-header__h1 {
+    position: relative;
+    //left: calc(#{$sizeTM}/2);
+    font-size: 35px;
+  }
+  .c-header__icon {
+    position: relative;
+    //left: calc(#{$sizeTM}/2);
+    padding: 15px;
+    width: $sizeTM;
+    height: $sizeTM;
+  }

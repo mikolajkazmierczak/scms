@@ -8,3 +8,7 @@
 <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Quicksand" rel="stylesheet">
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="scripts/_var.js"></script> <!-- store and handle needed variables -->
+<script src="scripts/mb_func.js"></script> <!-- menu buttons -->
+<script src="scripts/eb_func.js"></script> <!-- editor buttons -->
+<script src="scripts/input_handling.js"></script> <!-- handle the input of textareas and input fields -->

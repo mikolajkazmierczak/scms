@@ -1,0 +1,96 @@
+.c-menu {
+  z-index: 1;
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  height: 100%;
+  background-color: $colorGrey1;
+}
+  .c-menu__items {
+
+  }
+  .c-menu__items--bottom {
+    margin-top: auto;
+  }
+    .c-menu__item {
+      position: relative;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      padding: 0 5px;
+      width: 100%;
+      height: $sizeTM;
+      background-color: $colorGrey1;
+      transition: background-color $trFast;
+    }
+    .c-menu__item--top {
+      background-color: $colorGrey2;
+    }
+    .c-menu__item:hover {
+      cursor: pointer;
+      background-color: $colorMain;
+    }
+    .c-menu__item--top:hover {
+      cursor: pointer;
+      background-color: $colorLove;
+    }
+    .c-menu__item--sub:hover {
+      background-color: $colorSub; 
+    }
+    .js-add {
+      display: none;
+    }
+    .js-save {
+      display: none;
+    }
+      .c-menu__img-wrapper {
+        padding: 10px;
+        height: calc(#{$sizeTM} - 10px);
+        width: calc(#{$sizeTM} - 10px);
+      }
+        .c-menu__img {
+          width: 100%;
+          height: 100%;
+          will-change: transform;
+          transition: transform $trFast;
+        }
+      .c-menu__tooltip {
+        display: flex;
+        align-items: center;
+        z-index: -1;
+        position: absolute;
+        left: $sizeTM;
+        height: 100%;
+        padding: 0 15px 0 10px;
+        background-color: $colorMain;
+        will-change: transform;
+        transform: translateX(-100%);
+        transition: transform $trFast;
+      }
+      .c-menu__tooltip--sub {
+        display: none;
+        background-color: $colorSub;
+      }
+      .c-menu__tooltip--top {
+        background-color: $colorLove;
+      }
+      .c-menu__tooltip--hovered {
+        transform: translateX(0);
+      }
+        .c-menu__text {
+          font-size: 20px;
+          white-space: nowrap;
+          color: $colorWhite;
+        }
+    .c-menu__add-buttons {
+      border: solid 1px $colorGrey2;
+      border-left: 0px;
+      border-right: 1px;
+      transform: translateY(100%);
+      will-change: transform;
+      transition: transform $trFast;
+    }
