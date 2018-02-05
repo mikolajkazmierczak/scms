@@ -8,9 +8,9 @@
 
 <div class="o-section__content">
   <form class="o-section__form" method="post" enctype="multipart/form-data">
-    <input class="o-section__fileToUpload" name="imgUploader" type="file">
+    <input class="o-section__fileToUpload border-on-edit" name="imgUploader" type="file">
+    <div class="o-section__img-wrapper">
+      <img class="o-section__img" src="" alt="">
+    </div>
   </form>
-  <div class="o-section__input-img-wrapper">
-    <img class="o-section__input-img" src="" alt="">
-  </div>
 </div>

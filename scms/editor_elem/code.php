@@ -7,5 +7,5 @@
 </div>
 
 <div class="o-section__content">
-  <textarea class="o-section__textarea" cols="30" rows="10" placeholder="Wpisz kod html" oninput="AssignInput()"></textarea>
+  <textarea class="o-section__textarea border-on-edit" cols="30" rows="10" placeholder="Wpisz kod html" oninput="AssignInput()"></textarea>
 </div>

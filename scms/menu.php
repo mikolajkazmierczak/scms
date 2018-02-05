@@ -11,7 +11,7 @@
 
     <div class="c-menu__item js-home-button">
       <div class="c-menu__img-wrapper">
-        <img class="c-menu__img" src="http://localhost/scms/icons/menu/color/home.svg" alt="">
+        <img class="c-menu__img" src="http://localhost/scms/icons/menu/color/home2.svg" alt="">
       </div>
       <div class="c-menu__tooltip">
         <span class="c-menu__text">Strona główna panelu</span>

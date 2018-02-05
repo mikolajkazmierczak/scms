@@ -21,40 +21,28 @@ $(function(){
     }
     $(".c-header__h1").text("Strony");
     // showing the edition buttons
-    $(".js-add-buttons").load("scms/mb_add/mb_pages.php");
+    $(".js-add-buttons").load("scms/mb_add/mb_page.php");
     $(".js-add-buttons").css("display","block");
     $(".js-add").css("display","flex");
     $(".js-save").css("display","flex");
   });
 
-
-    // editing buttons
-    $(".js-add-buttons").on("click",".js-add-text",function(){
+  // editing buttons
+  function AddSection(sectionName) {
+    $(".js-add-buttons").on("click",".js-add-"+sectionName,function(){
       $(".o-section--expl").remove(); // remove the explanation
-      $(".js-inserter").before("<section class='o-section o-section--text'></section>"); // add a section
-      $(".o-section--text").last().load("scms/editor_elem/text.php"); // throw stuff in the section
+      $(".js-inserter").before("<section class='o-section o-section--"+sectionName+"'></section>"); // add a section
+      $(".o-section--"+sectionName).last().load("scms/editor_elem/"+sectionName+".php"); // throw stuff in the section
     });
-    $(".js-add-buttons").on("click",".js-add-img",function(){
-      $(".o-section--expl").remove(); // remove the explanation
-      $(".js-inserter").before("<section class='o-section o-section--img'></section>"); // add a section
-      $(".o-section--img").last().load("scms/editor_elem/img.php"); // throw stuff in the section
-    });
-    $(".js-add-buttons").on("click",".js-add-tiles",function(){
-      $(".o-section--expl").remove(); // remove the explanation
-      $(".js-inserter").before("<section class='o-section o-section--tiles'></section>"); // add a section
-      $(".o-section--tiles").last().load("scms/editor_elem/tiles.php"); // throw stuff in the section
-    });
-    $(".js-add-buttons").on("click",".js-add-code",function(){
-      $(".o-section--expl").remove(); // remove the explanation
-      $(".js-inserter").before("<section class='o-section o-section--code'></section>"); // add a section
-      $(".o-section--code").last().load("scms/editor_elem/code.php"); // throw stuff in the section
-    });
-  
-    $(".js-add-buttons").on("click",".js-add-subpage",function(){
-      $(".o-section--expl").remove(); // remove the explanation
-      $(".js-inserter").before("<section class='o-section o-section--subpage'></section>"); // add a section
-      $(".o-section--subpage").last().load("scms/editor_elem/subpage.php"); // throw stuff in the section
-    });
+  }
+  AddSection("page");
+  $(".js-add-buttons").on("click",".js-add-page",function(){
+    
+  });
+  AddSection("text");
+  AddSection("img");
+  AddSection("tiles");
+  AddSection("code");
 
 
   // menu buttom buttons

@@ -1,4 +1,5 @@
 $(function(){
+  // bar right
   $(".c-editor").on("click",".js-move-up",function(){
     var thisSection = $(this).parent().parent(); // get this section
     thisSection.wrap("<p/>"); // wrap this section in p
@@ -19,10 +20,21 @@ $(function(){
       thisSection.remove(); // remove this section
     }
   });
-
   $(".c-editor").on("click",".js-remove",function(){
     if(confirm("Are you sure?")) {
       $(this).parent(".o-bar").parent(".o-section").remove();
     }
+  });
+
+  // section
+  $(".c-editor").on("click",".js-add-tile",function(){
+    var tile =
+      '<div class="o-section__tile">\
+        <img class="o-section__img" src="imgs/zyczenia.png"\
+        alt="">\
+        <h1 class="o-section__name\
+        o-section__name--tile">Płytka</h1>\
+      </div>';
+    console.log(tile);
   });
 });

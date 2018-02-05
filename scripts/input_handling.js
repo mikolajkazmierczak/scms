@@ -15,12 +15,13 @@ $(function(){
   });
 
   $(document).ready(function(){			
-    $(document).on("change",".o-section__fileToUpload",function(e) {
-      //e.preventDefault();
-      var file_data = $('.o-section__fileToUpload').prop('files')[0];   
+    $(document).on("change",".o-section__fileToUpload",function(event) {
+      //event.preventDefault();
+      var file_data = $(event.currentTarget).prop('files')[0];  
+      //console.log(file_data)
       var form_data = new FormData();                  
-      form_data.append('file', file_data);
-      //alert(form_data);                             
+      form_data.append('file', file_data);                 
+      //console.log(form_data)
       $.ajax({
         url: 'scripts/imgUpload.php', // point to server-side PHP script 
         dataType: 'text',  // what to expect back from the PHP script, if anything
@@ -30,10 +31,15 @@ $(function(){
         data: form_data,                         
         type: 'post',
         success: function(){
-          jQuery.get('imgs/lastImguploaded.txt', function(data) {
-            $('.o-section__input-img').attr("src","imgs/"+data);
+          console.log("[LOG] Img sent to server!");
+          $.get('imgs/lastImguploaded.txt', function(data) {
+            $(event.currentTarget).next().css("height","auto");
+            $(event.currentTarget).next().css("margin-top","10px");
+            $(event.currentTarget).next().children(".o-section__img").attr("src","imgs/"+data);
           });
         }
+      }).fail(function(){
+        console.log("[LOG] There was an error while sending the img to the server...");
       });
     });
   });
