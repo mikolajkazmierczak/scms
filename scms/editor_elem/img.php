@@ -7,5 +7,10 @@
 </div>
 
 <div class="o-section__content">
-  <input class="o-section__input js-page-thumbnail" value="" type="file" accept="image/*" oninput="AssignInput()">
+  <form class="o-section__form" method="post" enctype="multipart/form-data">
+    <input class="o-section__fileToUpload" name="imgUploader" type="file">
+  </form>
+  <div class="o-section__input-img-wrapper">
+    <img class="o-section__input-img" src="" alt="">
+  </div>
 </div>

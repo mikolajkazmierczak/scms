@@ -21,7 +21,7 @@ $(function(){
     }
     $(".c-header__h1").text("Strony");
     // showing the edition buttons
-    $(".js-add-buttons").load("scms/mb_add/mb_page.php");
+    $(".js-add-buttons").load("scms/mb_add/mb_pages.php");
     $(".js-add-buttons").css("display","block");
     $(".js-add").css("display","flex");
     $(".js-save").css("display","flex");

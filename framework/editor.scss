@@ -6,7 +6,7 @@
   align-items: center;
   padding: $sizeTM 20%;
   width: 100%;
-  height: 50%;//calc(100% - #{$sizeTM});
+  height: calc(100% - #{$sizeTM});
 }
 
   .o-section {
@@ -73,6 +73,10 @@
       font-size: 20px;
       background-color: $colorGrey2;
     }
+    .o-section__form {
+      border: solid 5px $colorGrey2;
+      padding: 10px; 
+    }
     .o-section__input {
       outline: 0;
       border: solid 5px $colorGrey2;
@@ -94,6 +98,17 @@
     .o-section__textarea:focus {
       border-color: $colorMain;
     }
+    .o-section__input-img-wrapper {
+      overflow-y: scroll;
+      border: solid 5px $colorGrey2;
+      border-top: 0px;
+      width: 100%;
+      max-height: calc(#{$sizeTM}*4);
+    }
+      .o-section__input-img {
+        width: 100%;
+        height: auto;
+      }
 
 
 .c-save-button {

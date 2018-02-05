@@ -9,7 +9,6 @@ font-family: 'Josefin Sans', sans-serif;
 font-family: 'Quicksand', sans-serif;
 */
 * {
-  -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
 html, body {
@@ -20,25 +19,14 @@ html, body {
 
 body {
   overflow-y: hidden;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   font-family: 'Quicksand', sans-serif; }
 
 .c-menu {
   z-index: 1;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-flow: column;
   flex-flow: column;
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
   justify-content: flex-start;
-  -webkit-box-align: start;
-  -ms-flex-align: start;
   align-items: flex-start;
   margin: 0;
   padding: 0;
@@ -51,21 +39,13 @@ body {
 
 .c-menu__item {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
   justify-content: flex-start;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   padding: 0 5px;
   width: 100%;
   height: 60px;
   background-color: #141414;
-  -webkit-transition: background-color 0.2s;
-  -o-transition: background-color 0.2s;
   transition: background-color 0.2s; }
 
 .c-menu__item--top {
@@ -97,18 +77,10 @@ body {
   width: 100%;
   height: 100%;
   will-change: transform;
-  -webkit-transition: -webkit-transform 0.2s;
-  transition: -webkit-transform 0.2s;
-  -o-transition: transform 0.2s;
-  transition: transform 0.2s;
-  transition: transform 0.2s, -webkit-transform 0.2s; }
+  transition: transform 0.2s; }
 
 .c-menu__tooltip {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   z-index: -1;
   position: absolute;
@@ -117,14 +89,8 @@ body {
   padding: 0 15px 0 10px;
   background-color: #646464;
   will-change: transform;
-  -webkit-transform: translateX(-100%);
-  -ms-transform: translateX(-100%);
   transform: translateX(-100%);
-  -webkit-transition: -webkit-transform 0.2s;
-  transition: -webkit-transform 0.2s;
-  -o-transition: transform 0.2s;
-  transition: transform 0.2s;
-  transition: transform 0.2s, -webkit-transform 0.2s; }
+  transition: transform 0.2s; }
 
 .c-menu__tooltip--sub {
   display: none;
@@ -134,8 +100,6 @@ body {
   background-color: #f0aac8; }
 
 .c-menu__tooltip--hovered {
-  -webkit-transform: translateX(0);
-  -ms-transform: translateX(0);
   transform: translateX(0); }
 
 .c-menu__text {
@@ -147,15 +111,9 @@ body {
   border: solid 1px #e1e1e1;
   border-left: 0px;
   border-right: 1px;
-  -webkit-transform: translateY(100%);
-  -ms-transform: translateY(100%);
   transform: translateY(100%);
   will-change: transform;
-  -webkit-transition: -webkit-transform 0.2s;
-  transition: -webkit-transform 0.2s;
-  -o-transition: transform 0.2s;
-  transition: transform 0.2s;
-  transition: transform 0.2s, -webkit-transform 0.2s; }
+  transition: transform 0.2s; }
 
 .c-main {
   z-index: 0;
@@ -164,14 +122,8 @@ body {
 
 .c-header {
   z-index: 1;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   width: 100%;
   height: 60px;
@@ -190,19 +142,12 @@ body {
 .c-editor {
   overflow-y: auto;
   z-index: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-flow: column;
   flex-flow: column;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   padding: 60px 20%;
   width: 100%;
-  height: 50%; }
+  height: calc(100% - 60px); }
 
 .o-section {
   width: 100%;
@@ -232,14 +177,8 @@ body {
   width: calc(60px*2); }
 
 .o-bar {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-  -ms-flex-pack: end;
   justify-content: flex-end;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   padding: 5px 0;
   width: 100%;
@@ -261,14 +200,16 @@ body {
   background-color: #646464; }
 
 .o-bar__img--move-down {
-  -webkit-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
   transform: rotate(180deg); }
 
 .o-section__name {
   padding: 5px 10px;
   font-size: 20px;
   background-color: #e1e1e1; }
+
+.o-section__form {
+  border: solid 5px #e1e1e1;
+  padding: 10px; }
 
 .o-section__input {
   outline: 0;
@@ -290,6 +231,17 @@ body {
 .o-section__textarea:focus {
   border-color: #646464; }
 
+.o-section__input-img-wrapper {
+  overflow-y: scroll;
+  border: solid 5px #e1e1e1;
+  border-top: 0px;
+  width: 100%;
+  max-height: calc(60px*4); }
+
+.o-section__input-img {
+  width: 100%;
+  height: auto; }
+
 .c-save-button {
   position: fixed;
   right: 60px;
@@ -297,21 +249,13 @@ body {
   border-radius: 50%;
   width: calc(60px*1.2);
   height: calc(60px*1.2);
-  -webkit-transition: background-color 0.2s, -webkit-transform 0.2s;
-  transition: background-color 0.2s, -webkit-transform 0.2s;
-  -o-transition: transform 0.2s, background-color 0.2s;
-  transition: transform 0.2s, background-color 0.2s;
-  transition: transform 0.2s, background-color 0.2s, -webkit-transform 0.2s; }
+  transition: transform 0.2s, background-color 0.2s; }
 
 .c-save-button:hover {
   cursor: pointer;
-  -webkit-transform: scale(1.2);
-  -ms-transform: scale(1.2);
   transform: scale(1.2); }
 
 .c-save-button:hover .c-save-button__h1 {
-  -webkit-transform: translateY(0);
-  -ms-transform: translateY(0);
   transform: translateY(0); }
 
 .c-save-button__img {
@@ -329,11 +273,7 @@ body {
   text-align: center;
   font-size: 20px;
   will-change: transform;
-  -webkit-transform: translateY(-200%);
-  -ms-transform: translateY(-200%);
   transform: translateY(-200%);
-  -webkit-transition: -webkit-transform 0.2s;
-  transition: -webkit-transform 0.2s;
-  -o-transition: transform 0.2s;
-  transition: transform 0.2s;
-  transition: transform 0.2s, -webkit-transform 0.2s; }
+  transition: transform 0.2s; }
+
+/*# sourceMappingURL=framework.css.map */

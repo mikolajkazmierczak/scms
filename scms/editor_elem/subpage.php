@@ -12,8 +12,13 @@
   <input class="o-section__input js-page-title" value="" type="text" placeholder="Wpisz nazwę strony" oninput="AssignInput()">
 
   <h1 class="o-section__name">Miniaturka:</h1>
-  <input class="o-section__input js-page-thumbnail" value="" type="file" accept="image/*" oninput="AssignInput()">
-
+  <form class="o-section__form" method="post" enctype="multipart/form-data">
+    <input class="o-section__fileToUpload" name="imgUploader" type="file">
+  </form>
+  <div class="o-section__input-img-wrapper">
+    <img class="o-section__input-img" src="" alt="">
+  </div>
+  
   <!-- <h1 class="o-section__name">Bibliografia:</h1>
   <textarea class="o-section__textarea" cols="30" rows="10" placeholder="Wpisz bibliografię" oninput="AssignInput()"></textarea> -->
 </div>
