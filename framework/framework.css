@@ -276,6 +276,9 @@ body {
   -o-transition: border 0.2s;
   transition: border 0.2s; }
 
+.border-on-edit--topless {
+  border-top: 0px; }
+
 .border-on-edit:focus,
 .border-on-edit:active {
   border-color: #646464; }
@@ -283,7 +286,7 @@ body {
 .o-section__name {
   padding-top: calc(60px/6);
   padding-bottom: calc(60px/12);
-  padding-right: calc(60px/3);
+  padding-right: calc(60px/6);
   padding-left: calc(60px/6);
   width: 100%;
   font-size: 30px;

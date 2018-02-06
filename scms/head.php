@@ -3,7 +3,7 @@
 <title>SCMS</title>
 
 <link rel="stylesheet" href="framework/css_normalize.css">
-<link rel="stylesheet" href="./framework/framework.css">
+<link rel="stylesheet" href="framework/framework.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Anonymous+Pro|Comfortaa|Crimson+Text|VT323|Yeseva+One">
 <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Quicksand" rel="stylesheet">
 
@@ -12,3 +12,4 @@
 <script src="scripts/mb_func.js"></script> <!-- menu buttons -->
 <script src="scripts/eb_func.js"></script> <!-- editor buttons -->
 <script src="scripts/input_handling.js"></script> <!-- handle the input of textareas and input fields -->
+<script src="scripts/pagesSaveConvert.js"></script> <!-- save pages and templates and convert them to actual site php files -->

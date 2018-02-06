@@ -69,6 +69,9 @@
         will-change: border;
         transition: border $trFast;
       }
+      .border-on-edit--topless {
+        border-top: 0px;
+      }
       .border-on-edit:focus,
       .border-on-edit:active {
         border-color: $colorMain;
@@ -76,7 +79,7 @@
       .o-section__name {
         padding-top:    calc(#{$sizeTM}/6);
         padding-bottom: calc(#{$sizeTM}/12);
-        padding-right:  calc(#{$sizeTM}/3);
+        padding-right:  calc(#{$sizeTM}/6);
         padding-left:   calc(#{$sizeTM}/6);
         width: 100%;
         font-size: 30px;

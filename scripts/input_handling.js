@@ -33,8 +33,10 @@ $(function(){
         success: function(){
           console.log("[LOG] Img sent to server!");
           $.get('imgs/lastImguploaded.txt', function(data) {
-            $(event.currentTarget).next().css("height","auto");
-            $(event.currentTarget).next().css("margin-top","10px");
+            $(event.currentTarget).next().css({
+              "height":"auto"
+            });
+            $(event.currentTarget).next().addClass("border-on-edit border-on-edit--topless");
             $(event.currentTarget).next().children(".o-section__img").attr("src","imgs/"+data);
           });
         }

@@ -2,7 +2,7 @@
   <div class="c-menu__items">
     <div class="c-menu__item c-menu__item--top js-back-button">
       <div class="c-menu__img-wrapper">
-        <img class="c-menu__img" src="http://localhost/scms/icons/menu/color/ruby.svg" alt="">
+        <img class="c-menu__img" src="icons/menu/color/ruby.svg" alt="">
       </div>
       <div class="c-menu__tooltip c-menu__tooltip--top">
         <span class="c-menu__text c-menu__text--top">Wróć do strony</span>
@@ -11,7 +11,7 @@
 
     <div class="c-menu__item js-home-button">
       <div class="c-menu__img-wrapper">
-        <img class="c-menu__img" src="http://localhost/scms/icons/menu/color/home2.svg" alt="">
+        <img class="c-menu__img" src="icons/menu/color/home2.svg" alt="">
       </div>
       <div class="c-menu__tooltip">
         <span class="c-menu__text">Strona główna panelu</span>
@@ -20,7 +20,7 @@
 
     <div class="c-menu__item js-subpages-button">
       <div class="c-menu__img-wrapper">
-        <img class="c-menu__img" src="http://localhost/scms/icons/menu/color/pages.svg" alt="">
+        <img class="c-menu__img" src="icons/menu/color/pages.svg" alt="">
       </div>
       <div class="c-menu__tooltip">
         <span class="c-menu__text">Edytuj strony</span>
@@ -33,7 +33,7 @@
     
     <div class="c-menu__item js-add">
       <div class="c-menu__img-wrapper">
-        <img class="c-menu__img" src="http://localhost/scms/icons/menu/color/plus.svg" alt="">
+        <img class="c-menu__img" src="icons/menu/color/plus.svg" alt="">
       </div>
       <div class="c-menu__tooltip">
         <span class="c-menu__text">Dodawanie elementów</span>
@@ -42,7 +42,7 @@
 
     <div class="c-menu__item js-save">
       <div class="c-menu__img-wrapper">
-        <img class="c-menu__img" src="http://localhost/scms/icons/menu/color/save.svg" alt="">
+        <img class="c-menu__img" src="icons/menu/color/save.svg" alt="">
       </div>
       <div class="c-menu__tooltip">
         <span class="c-menu__text">Zapisz</span>
@@ -51,7 +51,7 @@
 
     <div class="c-menu__item">
       <div class="c-menu__img-wrapper  c-menu__img-wrapper--help">
-        <img class="c-menu__img" src="http://localhost/scms/icons/menu/color/help.svg" alt="">
+        <img class="c-menu__img" src="icons/menu/color/help.svg" alt="">
       </div>
       <div class="c-menu__tooltip">
         <span class="c-menu__text">Pomoc</span>

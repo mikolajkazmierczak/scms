@@ -1,10 +1,10 @@
 <div class="o-bar">
-  <img class="o-bar__img js-edit" src="../scms/icons/editor/color/edit.svg" alt="">
+  <img class="o-bar__img js-edit" src="http://localhost/scms/icons/editor/color/edit.svg" alt="">
   <h1 class="o-bar__h1">Strona</h1>
 
-  <img class="o-bar__img o-bar__img--move-up js-move-up" src="../scms/icons/editor/color/arrow.svg" alt="">
-  <img class="o-bar__img o-bar__img--move-down js-move-down" src="../scms/icons/editor/color/arrow.svg" alt="">
-  <img class="o-bar__img js-remove" src="../scms/icons/editor/color/remove.svg" alt="">
+  <img class="o-bar__img o-bar__img--move-up js-move-up" src="http://localhost/scms/icons/editor/color/arrow.svg" alt="">
+  <img class="o-bar__img o-bar__img--move-down js-move-down" src="http://localhost/scms/icons/editor/color/arrow.svg" alt="">
+  <img class="o-bar__img js-remove" src="http://localhost/scms/icons/editor/color/remove.svg" alt="">
 </div>
 
 <div class="o-section__content">

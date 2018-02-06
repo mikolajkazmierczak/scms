@@ -62,6 +62,8 @@ $(function(){
     }
   });
 
+
+
   $(".js-save").on("click", function(){
     var trimEditorHtml = $.trim($(".c-editor").html());
     if(trimEditorHtml == '<div class="js-inserter"></div>') {
@@ -70,6 +72,7 @@ $(function(){
     } else {
       $edit_subpages = trimEditorHtml;
     }
+    PagesSaveConvert();
     alert("Zapisano!");
   });
 

@@ -1,9 +1,9 @@
 <div class="o-bar">
   <h1 class="o-bar__h1">Płytki</h1>
 
-  <img class="o-bar__img o-bar__img--move-up js-move-up" src="../scms/icons/editor/color/arrow.svg" alt="">
-  <img class="o-bar__img o-bar__img--move-down js-move-down" src="../scms/icons/editor/color/arrow.svg" alt="">
-  <img class="o-bar__img js-remove" src="../scms/icons/editor/color/remove.svg" alt="">
+  <img class="o-bar__img o-bar__img--move-up js-move-up" src="icons/editor/color/arrow.svg" alt="">
+  <img class="o-bar__img o-bar__img--move-down js-move-down" src="icons/editor/color/arrow.svg" alt="">
+  <img class="o-bar__img js-remove" src="icons/editor/color/remove.svg" alt="">
 </div>
 
 <div class="o-section__content o-section__content--tiles">
@@ -24,7 +24,7 @@
 
     <div class="o-section__button-wrapper">
       <div class="o-section__button js-add-tile">
-        <img class="o-section__img" src="../scms/icons/menu/color/plus.svg" alt="">
+        <img class="o-section__img" src="icons/menu/color/plus.svg" alt="">
         <!-- <h1 class="o-section__name o-section__name--tile o-section__name--button">Dodaj płytkę</h1> -->
       </div>
     </div>
