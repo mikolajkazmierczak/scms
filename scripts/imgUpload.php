@@ -40,12 +40,12 @@ if ($uploadOk == 0) {
   //echo "Sorry, your file was not uploaded.";
 // if everything is ok, try to upload file
 } else {
-  if(move_uploaded_file($_FILES['file']['tmp_name'], $target_dir . $_FILES['file']['name'])) {
+  if(move_uploaded_file($_FILES["file"]["tmp_name"], $target_dir . $_FILES["file"]["name"])) {
 
     //echo "The file ". basename( $_FILES["filer"]["name"]). " has been uploaded.";
 
     $lastImgTxtFile = fopen("../imgs/lastImgUploaded.txt","w");
-    $lastImgPath    = basename($_FILES['file']['name']);
+    $lastImgPath    = basename($_FILES["file"]["name"]);
     fwrite($lastImgTxtFile, $lastImgPath);
     fclose($lastImgTxtFile);
 

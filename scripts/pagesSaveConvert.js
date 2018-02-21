@@ -1,4 +1,4 @@
-function PagesSaveConvert() {
+function PagesSave() {
   var tempEditorHtml = $.trim($(".c-editor").html());
   // check if empty and assign the pages.php welcome screen
   if(tempEditorHtml == '<div class="js-inserter"></div>') {
@@ -23,4 +23,17 @@ function PagesSaveConvert() {
   }
 }
 
-FIXME: check why page1.php content is not chaning on the server after save
+function Save() {
+  var trimEditorHtml = $.trim($(".c-editor").html());
+  if(trimEditorHtml == '<div class="js-inserter"></div>') {
+    $edit_subpages = "";
+    $(".c-editor").load("scms/scms_pages/pages.php");
+  } else {
+    $edit_subpages = trimEditorHtml;
+  }
+  PagesSave();
+  alert("Zapisano!");
+  
+}
+
+//FIXME: check why page1.php content is not chaning on the server after save

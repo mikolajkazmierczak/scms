@@ -18,7 +18,7 @@
       </div>
     </div>
 
-    <div class="c-menu__item js-subpages-button">
+    <div class="c-menu__item js-pages-button">
       <div class="c-menu__img-wrapper">
         <img class="c-menu__img" src="icons/menu/color/pages.svg" alt="">
       </div>

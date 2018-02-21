@@ -13,5 +13,4 @@ if ($uploadOk == 0) {
   fwrite($page, $html);
   fclose($page);
 }
-
 ?>

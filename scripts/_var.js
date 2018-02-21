@@ -9,4 +9,6 @@ $(function(){
 
   $edit_subpages = "";
   $edit_pages = {};
+
+  $pages_or_page = "";
 });

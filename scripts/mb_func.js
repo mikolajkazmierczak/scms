@@ -2,6 +2,7 @@ $(function(){
   // menu top buttons
   $(".js-back-button").on("click", function(){
     $(".c-editor").html("error:nocontent(no_niestety_to_potem)");
+    Save();
   });
   
   $(".js-home-button").on("click", function(){
@@ -11,9 +12,11 @@ $(function(){
     $(".js-add-buttons").css("display","none");
     $(".js-add").css("display","none");
     $(".js-save").css("display","none");
+    Save();
   });
 
-  $(".js-subpages-button").on("click", function(){
+  $(".js-pages-button").on("click", function(){
+    $pages_or_page = "pages";
     if($edit_subpages == "") {
       $(".c-editor").load("scms/scms_pages/pages.php");
     } else {
@@ -25,24 +28,27 @@ $(function(){
     $(".js-add-buttons").css("display","block");
     $(".js-add").css("display","flex");
     $(".js-save").css("display","flex");
+    Save();
   });
 
   // editing buttons
-  function AddSection(sectionName) {
+  function AddSectionMenuButton(sectionName) {
     $(".js-add-buttons").on("click",".js-add-"+sectionName,function(){
       $(".o-section--expl").remove(); // remove the explanation
       $(".js-inserter").before("<section class='o-section o-section--"+sectionName+"'></section>"); // add a section
-      $(".o-section--"+sectionName).last().load("scms/editor_elem/"+sectionName+".php"); // throw stuff in the section
+      $(".o-section--"+sectionName).last().load("scms/editor_elem/"+sectionName+".php", function(){
+        Save();
+      }); // throw stuff in the section and then save
     });
   }
-  AddSection("page");
+  AddSectionMenuButton("page");
   $(".js-add-buttons").on("click",".js-add-page",function(){
     
   });
-  AddSection("text");
-  AddSection("img");
-  AddSection("tiles");
-  AddSection("code");
+  AddSectionMenuButton("text");
+  AddSectionMenuButton("img");
+  AddSectionMenuButton("tiles");
+  AddSectionMenuButton("code");
 
 
   // menu buttom buttons
@@ -63,17 +69,8 @@ $(function(){
   });
 
 
-
   $(".js-save").on("click", function(){
-    var trimEditorHtml = $.trim($(".c-editor").html());
-    if(trimEditorHtml == '<div class="js-inserter"></div>') {
-      $edit_subpages = "";
-      $(".c-editor").load("scms/scms_pages/pages.php");
-    } else {
-      $edit_subpages = trimEditorHtml;
-    }
-    PagesSaveConvert();
-    alert("Zapisano!");
+    Save();
   });
 
   $(".c-menu__img-wrapper--help").hover(function(){

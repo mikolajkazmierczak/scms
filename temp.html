@@ -1,0 +1,170 @@
+TYPE      $(".o-section--page");
+TITLE     $(".js-page-title").val();
+THUMBNAIL $(".o-section__img").attr("src");
+
+<div class="o-bar">
+  <img class="o-bar__img js-edit" src="../scms/icons/editor/color/edit.svg" alt="">
+  <h1 class="o-bar__h1">Strona</h1>
+
+  <img class="o-bar__img o-bar__img--move-up js-move-up" src="../scms/icons/editor/color/arrow.svg" alt="">
+  <img class="o-bar__img o-bar__img--move-down js-move-down" src="../scms/icons/editor/color/arrow.svg" alt="">
+  <img class="o-bar__img js-remove" src="../scms/icons/editor/color/remove.svg" alt="">
+</div>
+
+<div class="o-section__content">
+  <h1 class="o-section__name">Tytuł:</h1>
+  <input class="o-section__input js-page-title" value="" type="text" placeholder="Wpisz nazwę strony" oninput="AssignInput()">
+
+  <h1 class="o-section__name">Miniaturka:</h1>
+  <form class="o-section__form" method="post" enctype="multipart/form-data">
+    <input class="o-section__fileToUpload" name="imgUploader" type="file">
+
+    <div class="o-section__img-wrapper">
+      <img class="o-section__img" src="" alt="">
+    </div>
+  </form>
+</div>
+
+
+
+
+TYPE $(".o-section--text");
+TEXT $(".o-section__textarea").text();
+
+<div class="o-bar">
+  <h1 class="o-bar__h1">Tekst</h1>
+
+  <img class="o-bar__img o-bar__img--move-up js-move-up" src="../scms/icons/editor/color/arrow.svg" alt="">
+  <img class="o-bar__img o-bar__img--move-down js-move-down" src="../scms/icons/editor/color/arrow.svg" alt="">
+  <img class="o-bar__img js-remove" src="../scms/icons/editor/color/remove.svg" alt="">
+</div>
+
+<div class="o-section__content">
+  <textarea class="o-section__textarea" cols="30" rows="10" placeholder="Wpisz tekst" oninput="AssignInput()"></textarea>
+</div>
+
+
+
+
+TYPE $(".o-section--img");
+IMG  $(".o-section__img").attr("src");
+
+<div class="o-bar">
+  <h1 class="o-bar__h1">Zdjęcie</h1>
+
+  <img class="o-bar__img o-bar__img--move-up js-move-up" src="../scms/icons/editor/color/arrow.svg" alt="">
+  <img class="o-bar__img o-bar__img--move-down js-move-down" src="../scms/icons/editor/color/arrow.svg" alt="">
+  <img class="o-bar__img js-remove" src="../scms/icons/editor/color/remove.svg" alt="">
+</div>
+
+<div class="o-section__content">
+  <form class="o-section__form" method="post" enctype="multipart/form-data">
+    <input class="o-section__fileToUpload" name="imgUploader" type="file">
+  </form>
+  <div class="o-section__img-wrapper">
+    <img class="o-section__img" src="" alt="">
+  </div>
+</div>
+
+
+
+
+//TODO:
+TYPE      $(".o-section--tiles");
+
+<div class="o-bar">
+  <h1 class="o-bar__h1">Płytki</h1>
+
+  <img class="o-bar__img o-bar__img--move-up js-move-up" src="../scms/icons/editor/color/arrow.svg" alt="">
+  <img class="o-bar__img o-bar__img--move-down js-move-down" src="../scms/icons/editor/color/arrow.svg" alt="">
+  <img class="o-bar__img js-remove" src="../scms/icons/editor/color/remove.svg" alt="">
+</div>
+
+<div class="o-section__content">
+  <h1 class="o-section__name">error:nocontent(w_budowie)</h1>
+</div>
+
+
+
+
+
+TYPE $(".o-section--code");
+TEXT $(".o-section__textarea").text();
+
+<div class="o-bar">
+  <h1 class="o-bar__h1">Kod</h1>
+
+  <img class="o-bar__img o-bar__img--move-up js-move-up" src="../scms/icons/editor/color/arrow.svg" alt="">
+  <img class="o-bar__img o-bar__img--move-down js-move-down" src="../scms/icons/editor/color/arrow.svg" alt="">
+  <img class="o-bar__img js-remove" src="../scms/icons/editor/color/remove.svg" alt="">
+</div>
+
+<div class="o-section__content">
+  <textarea class="o-section__textarea" cols="30" rows="10" placeholder="Wpisz kod html" oninput="AssignInput()"></textarea>
+</div>
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCMS</title>
+    <link rel="stylesheet" href="style.css">
+
+  </head>
+  <body>
+
+    <!-- text -->
+    <div class="scms-section scms-section--text">
+      <p class="scms-text">tekst</p>
+    </div>
+
+    <!-- img -->
+    <div class="scms-section scms-section--img">
+      <img class="scms-img" src="imgs/zyczenia.png" alt="scms-img">
+    </div>
+
+    <!-- tiles -->
+    <div class="o-scms-section o-scms-section--tiles">
+      <div class="scms-tiles-wrapper">
+        <div class="scms-tile">
+
+        </div>
+      </div>
+    </div>
+
+    <!-- code -->
+    <div class="o-scms-section o-scms-section--code">
+        <!-- code goes here -->
+    </div>
+
+  </body>
+</html>
+
+
+//FIXME: img border 
+
+
+
+TYPE        $(".o-section--page");
+|	TITLE     $(".js-page-title").val();
+|	THUMBNAIL $(".o-section__img").attr("src");
+	
+TYPE   $(".o-section--text");
+|	TEXT $(".o-section__textarea").text();
+	
+TYPE   $(".o-section--img");
+|	IMG  $(".o-section__img").attr("src");
+	
+TYPE   $(".o-section--tiles");			//TODO:
+
+TYPE   $(".o-section--code");
+|	TEXT $(".o-section__textarea").text();

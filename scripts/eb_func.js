@@ -9,6 +9,7 @@ $(function(){
       thisSection.prev(".o-section").before(tempHtml); // add tempHtml (this section) before the previous section
       thisSection.remove(); // remove this section
     }
+    Save();
   });
   $(".c-editor").on("click",".js-move-down",function(){
     var thisSection = $(this).parent().parent(); // get this section
@@ -19,10 +20,12 @@ $(function(){
       thisSection.next(".o-section").after(tempHtml); // add tempHtml (this section) after the next section
       thisSection.remove(); // remove this section
     }
+    Save();
   });
   $(".c-editor").on("click",".js-remove",function(){
     if(confirm("Are you sure?")) {
       $(this).parent(".o-bar").parent(".o-section").remove();
+      Save();
     }
   });
 
